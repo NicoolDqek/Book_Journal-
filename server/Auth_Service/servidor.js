@@ -2,10 +2,14 @@
     const cors=require('cors')
     const db= require('./config/dbConnection')
     require('dotenv').config()
+    const userRouter=require('./routes/userRouter')
     const PORT= process.env.PORT_AUTH
     const app = express()
     app.use(express.json())
     app.use(cors());
+
+
+    app.use('/usuario',userRouter)
 
     db()
     app.get('/',(req,res)=>{
@@ -15,3 +19,6 @@
     app.listen(PORT,()=>{
     console.log(`conetado al puerto ${PORT} 🧑‍💻`)
     })
+
+
+
