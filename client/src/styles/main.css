@@ -1,1 +1,183 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+.AuthPage {
+  overflow: hidden;
+}
+.AuthPage .register, .AuthPage .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: -moz-min-content;
+  height: min-content;
+}
+.AuthPage .register .titulo, .AuthPage .login .titulo {
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  margin: 3rem 0;
+  letter-spacing: 3px;
+  font-size: 35px;
+}
+.AuthPage .register input, .AuthPage .login input {
+  background-color: rgba(227, 244, 238, 0.5);
+  width: 400px;
+}
+.AuthPage .register label, .AuthPage .login label {
+  color: gray;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+.AuthPage .register p, .AuthPage .login p {
+  color: rgb(155, 154, 154);
+}
+.AuthPage .register p span, .AuthPage .login p span {
+  cursor: pointer;
+  font-weight: 800;
+}
+.AuthPage button {
+  width: 400px;
+  padding: 7px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(210, 248, 210);
+  margin-top: 1rem;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 3px;
+}
+
+.image_loguin {
+  height: 100vh;
+  position: relative;
+}
+.image_loguin .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(154, 229, 139, 0.219);
+  border-radius: 50% 0 0 50%;
+  left: -40px;
+  transform: translateX(40px);
+  z-index: 2;
+}
+.image_loguin img {
+  height: 100vh;
+  width: 100%;
+  border-radius: 50% 0 0 50%;
+  transform: translateX(50px);
+}
+.image_loguin p {
+  color: rgb(155, 154, 154);
+}
+
+.AuthPage .navbar li, .AuthPage .navbar .navbar-brand {
+  color: rgb(0, 0, 0);
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 3px;
+  position: relative;
+  margin: 0 5px;
+  font-size: 20px;
+}
+.AuthPage .navbar li::before, .AuthPage .navbar .navbar-brand::before {
+  content: " ";
+  width: 0;
+  position: absolute;
+  background-color: black;
+  height: 10%;
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+.AuthPage .navbar li:hover::before, .AuthPage .navbar .navbar-brand:hover::before {
+  width: 100%;
+}
+
+.hero {
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.317);
+  background-image: url("https://as1.ftcdn.net/v2/jpg/02/84/68/70/1000_F_284687065_WqALgJLQAhxLlsuqz8NjYjWrts2ONbXk.jpg");
+  background-size: contain;
+  background-position: center;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.hero .navbar {
+  background-color: rgba(215, 215, 215, 0.053);
+  padding: 20px;
+}
+.hero .navbar Link, .hero .navbar .nav-link, .hero .navbar .navbar-brand {
+  color: rgb(1, 1, 1);
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 5px;
+  position: relative;
+  margin: 0 5px;
+  font-size: 18px;
+}
+.hero .navbar a {
+  color: rgb(0, 0, 0);
+  background-color: rgb(194, 240, 225);
+  padding: 3px;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+}
+.hero .navbar a:hover {
+  scale: 1.1;
+  background-color: rgb(12, 160, 113);
+  color: white;
+}
+.hero .login_boton {
+  margin-right: 3rem;
+}
+.hero .login_boton button {
+  background-color: rgb(191, 252, 231);
+  width: 150px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+.hero .login_boton button:hover {
+  background-color: rgb(12, 160, 113);
+}
+
+.hero .info {
+  margin: 1rem;
+  padding: 2rem;
+}
+.hero .info h2 {
+  color: white;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+.hero .info p {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.hero button {
+  background-color: rgb(191, 252, 231);
+  width: 200px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  border: none;
+  border-radius: 10px;
+}
+.hero button:hover {
+  background-color: rgb(12, 160, 113);
+  color: white;
+}/*# sourceMappingURL=main.css.map */

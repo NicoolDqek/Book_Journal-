@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import AuthPage from './pages/AuthPage'
+import HomePage from './pages/initials/HomePage'
+import AuthPage from './pages/initials/AuthPage'
 
 function App() {
 
@@ -10,6 +10,8 @@ function App() {
     <>
     <Routes>
         <Route path='/' element={<AuthPage/>} />
+        <Route path='/home' element={<HomePage/>} />
+
     </Routes>
     </>
   )

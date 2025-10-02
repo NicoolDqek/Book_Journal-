@@ -1,16 +1,21 @@
 import React from 'react'
 
-function Login() {
+function Login({setIsLoginForm}) {
   return (
-    <div>
-          <div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"></input>
-  <label for="floatingInput">Email address</label>
-</div>
+    <div className='login'>  
+      <h4 className='titulo text-center'>Ingresa en tu cuenta</h4>
+
+    <div class="form-floating mb-3  foros">
+  <input type="email" class="form-control" id="floatingInput" placeholder="Email"></input>
+  <label for="floatingInput">Email</label>
+</div> 
 <div class="form-floating">
   <input type="password" class="form-control" id="floatingPassword" placeholder="Password"></input>
-  <label for="floatingPassword">Password</label>
+  <label for="floatingPassword">Contraseña</label>
 </div>
+<button>Ingresar</button>
+<p>¿No tienes una cuenta? <span onClick={() => setIsLoginForm(false)}>Regístrate</span></p>
+
     </div>
   )
 }
