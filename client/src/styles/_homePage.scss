@@ -1,5 +1,6 @@
+@use './variables' as *;
 .hero{
-    height: 60vh;
+  
     background-color: rgba(0, 0, 0, 0.317);
     background-image: url('https://as1.ftcdn.net/v2/jpg/02/84/68/70/1000_F_284687065_WqALgJLQAhxLlsuqz8NjYjWrts2ONbXk.jpg');
     background-size: contain;
@@ -15,7 +16,7 @@
        Link, .nav-link, .navbar-brand{
    color: rgb(1, 1, 1);
         font-family: "Playfair Display", serif;
-         font-optical-sizing: auto;
+         
         font-weight: 900;
         font-style: normal;
         letter-spacing: 5px;
@@ -25,7 +26,7 @@
     }
     a{
         color: rgb(0, 0, 0);
-        background-color: $verde_menta;
+        background-color: $verde_oscuro;
         padding: 3px;
         border-radius: 10px;
         transition: .3s ease-in;
@@ -33,6 +34,7 @@
             scale: 1.1;
              background-color: $verde_oscuro;
             color: white;
+            
         }
         
         }
@@ -40,7 +42,7 @@
     .login_boton{
         margin-right: 3rem;
        button{
-        background-color:$verde_menta;
+        background-color:$verde_oscuro;
         width: 150px;
         color: rgb(0, 0, 0);
         letter-spacing: 3px;
@@ -74,7 +76,7 @@ h2{
     }
 }
  button{
-        background-color: $verde_menta;
+        background-color:$verde_oscuro;
         width: 200px;
         color: rgb(0, 0, 0);
         letter-spacing: 3px;
@@ -94,13 +96,200 @@ h2{
 
 
 .section-1{
-
-    .rigth{
+ font-family: $font_family;
+ padding: 4rem 0  2rem 2rem;
+ background-color: $verde_menta;
+    .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        img{
+            height: 250px;
+            border-radius: 10px;
+        }
+    }
+    .right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 3px;
+    
+    
+     
         h6{
-            color: #ff0a0a;
-            color: aquamarine;
-        }   
+         padding-bottom: 1rem;
+         font-weight: 800;
+         font-size: 25px;   
+        }
     }
 }
 
 
+
+.section-2{
+
+ font-family: $font_family;
+ padding: 1rem 5rem;
+background-color: $verde_oscuro;
+    .left{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+   
+        img{
+            height: 200px;
+            margin: 10px;
+            width: 230px;
+            border-radius: 10px;
+            
+
+        }
+    }
+    .right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 3px;
+    
+    
+        h6{
+         padding-bottom: 1rem;
+         font-weight: 900;  
+         font-size: 20px;
+        }
+    }
+}
+
+.section-3 {
+     font-family: $font_family;
+     padding-bottom: 3rem;
+     padding: 1rem 4rem;
+background-color: $verde_menta;
+    
+
+     .left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 4rem;
+
+
+        h6{
+            font-weight: 900;
+            font-size: 25px;
+        }
+     }
+    
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+img {
+    border-radius: 10px;
+    height: 300px;
+
+}
+    }
+}
+
+.titulo-cards{
+    padding-top: 2rem;
+    font-size: 30px;
+    font-family: $font_family;
+    letter-spacing: 5px;
+    font-weight: 500;
+
+}
+
+.cards{
+padding:2rem 5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+.card{
+    width: 15rem;
+    height: 12rem;
+    background-color: $verde_oscuro;
+    font-family: $font_family;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+
+    i{
+        font-size: 30px;
+    }
+}
+
+.btn{
+    background-color: $verde_menta;
+    font-weight: 600;
+    &:hover{
+        background-color: black;
+        color: white;
+
+    }
+}
+}
+
+
+.footer {
+    background-color: $verde_oscuro;
+
+    h4{
+        letter-spacing: 4px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    h5{
+        text-align: center;
+        letter-spacing: 4px;
+        font-weight: 900;
+        margin-bottom: 10px;
+
+    }
+
+    ul{
+        text-align: center;
+        
+        li{
+            padding: 5px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            cursor: pointer;
+
+            &:hover{
+                font-weight: 900;
+                 
+            }
+        }
+    }
+
+    
+
+    .form-control{
+        background-color: $verde_oscuro;
+        border: 1px solid white;
+
+        &::placeholder{
+            color: rgb(201, 188, 188);
+            letter-spacing: 3px;
+        }
+    }
+
+    button{
+      font-weight: 600;
+      letter-spacing: 3px;  
+      
+    }
+}

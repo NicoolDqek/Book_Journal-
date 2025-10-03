@@ -58,7 +58,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(154, 229, 139, 0.219);
+  background-color: rgba(154, 229, 139, 0.22);
   border-radius: 50% 0 0 50%;
   left: -40px;
   transform: translateX(40px);
@@ -99,7 +99,6 @@
 }
 
 .hero {
-  height: 60vh;
   background-color: rgba(0, 0, 0, 0.317);
   background-image: url("https://as1.ftcdn.net/v2/jpg/02/84/68/70/1000_F_284687065_WqALgJLQAhxLlsuqz8NjYjWrts2ONbXk.jpg");
   background-size: contain;
@@ -116,7 +115,6 @@
 .hero .navbar Link, .hero .navbar .nav-link, .hero .navbar .navbar-brand {
   color: rgb(1, 1, 1);
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
   letter-spacing: 5px;
@@ -126,7 +124,7 @@
 }
 .hero .navbar a {
   color: rgb(0, 0, 0);
-  background-color: rgb(194, 240, 225);
+  background-color: rgb(12, 160, 113);
   padding: 3px;
   border-radius: 10px;
   transition: 0.3s ease-in;
@@ -140,7 +138,7 @@
   margin-right: 3rem;
 }
 .hero .login_boton button {
-  background-color: rgb(191, 252, 231);
+  background-color: rgb(12, 160, 113);
   width: 150px;
   color: rgb(0, 0, 0);
   letter-spacing: 3px;
@@ -168,7 +166,7 @@
   letter-spacing: 2px;
 }
 .hero button {
-  background-color: rgb(191, 252, 231);
+  background-color: rgb(12, 160, 113);
   width: 200px;
   color: rgb(0, 0, 0);
   letter-spacing: 3px;
@@ -180,4 +178,170 @@
 .hero button:hover {
   background-color: rgb(12, 160, 113);
   color: white;
+}
+
+.section-1 {
+  font-family: "Playfair Display", serif;
+  padding: 4rem 0 2rem 2rem;
+  background-color: rgb(210, 248, 210);
+}
+.section-1 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-1 .left img {
+  height: 250px;
+  border-radius: 10px;
+}
+.section-1 .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: 3px;
+}
+.section-1 .right h6 {
+  padding-bottom: 1rem;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.section-2 {
+  font-family: "Playfair Display", serif;
+  padding: 1rem 5rem;
+  background-color: rgb(12, 160, 113);
+}
+.section-2 .left {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.section-2 .left img {
+  height: 200px;
+  margin: 10px;
+  width: 230px;
+  border-radius: 10px;
+}
+.section-2 .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  letter-spacing: 3px;
+}
+.section-2 .right h6 {
+  padding-bottom: 1rem;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.section-3 {
+  font-family: "Playfair Display", serif;
+  padding-bottom: 3rem;
+  padding: 1rem 4rem;
+  background-color: rgb(210, 248, 210);
+}
+.section-3 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem;
+}
+.section-3 .left h6 {
+  font-weight: 900;
+  font-size: 25px;
+}
+.section-3 .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-3 .right img {
+  border-radius: 10px;
+  height: 300px;
+}
+
+.titulo-cards {
+  padding-top: 2rem;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+.cards {
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards .card {
+  width: 15rem;
+  height: 12rem;
+  background-color: rgb(12, 160, 113);
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+.cards .card i {
+  font-size: 30px;
+}
+.cards .btn {
+  background-color: rgb(210, 248, 210);
+  font-weight: 600;
+}
+.cards .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  background-color: rgb(12, 160, 113);
+}
+.footer h4 {
+  letter-spacing: 4px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.footer p {
+  text-align: center;
+  font-size: 18px;
+}
+.footer h5 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.footer ul {
+  text-align: center;
+}
+.footer ul li {
+  padding: 5px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+.footer ul li:hover {
+  font-weight: 900;
+}
+.footer .form-control {
+  background-color: rgb(12, 160, 113);
+  border: 1px solid white;
+}
+.footer .form-control::-moz-placeholder {
+  color: rgb(201, 188, 188);
+  letter-spacing: 3px;
+}
+.footer .form-control::placeholder {
+  color: rgb(201, 188, 188);
+  letter-spacing: 3px;
+}
+.footer button {
+  font-weight: 600;
+  letter-spacing: 3px;
 }/*# sourceMappingURL=main.css.map */
