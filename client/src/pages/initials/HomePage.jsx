@@ -9,6 +9,8 @@ function HomePage() {
      <Hero/>
      <SectionInfo/>
      <Footer/>
+     
+     
     </div>
   )
 }

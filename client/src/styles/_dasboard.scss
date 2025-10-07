@@ -1,0 +1,214 @@
+@use './variables' as *;
+
+
+
+.sideBar{
+
+padding: 10px;
+background-color: $verde_menta;
+
+
+
+
+.sidebar{
+height: 100vh;
+}
+.border{
+    border-radius: 20px;
+    background-color: $verde_oscuro;
+}
+
+.contenido{
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
+    &::-webkit-scrollbar{
+width: 0;
+    }
+
+    .navbar{
+       position: sticky;
+       top: 0;      
+    }
+}
+
+.tittle,.nav-link{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-family: $font_family;
+    font-weight: 700;
+ 
+    
+    &:hover{
+        color: black;
+    }
+}
+
+}
+
+
+.hero_d{
+padding: 3rem;
+margin: 0 10px;
+border-radius: 10px;
+background-color: $verde_oscuro;
+font-family: $font_family;
+background-image: url('https://static.vecteezy.com/system/resources/thumbnails/049/178/889/small_2x/stack-of-open-books-on-a-green-background-knowledge-and-education-concept-photo.jpg');
+background-position: center;
+background-size: cover;
+
+h5{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: white;
+    
+}
+p{
+    color: white;
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.btn{
+    background-color: transparent;
+    border-color: white;
+    letter-spacing: 4px;
+    font-weight: 800;
+    &:hover{
+        background-color: white;
+        color: rgb(0, 0, 0);
+
+    }
+}
+
+}
+
+
+.targetas {
+    display: flex;
+    justify-content: space-around;
+     
+    .card{
+        margin: 6px 1px;
+        background-color: $verde_oscuro;
+        height: 130px;
+        text-align: center;
+       display: flex;
+       justify-content: center;
+       font-family: $font_family;
+       overflow: hidden;
+       height: 100px;
+       transition: .3s ease-in-out;
+       cursor: pointer;
+    
+&:hover{
+
+    height: auto;
+
+    h5{
+        transform: translateY(0);
+        
+    }
+    h2{
+      transform: translateY(0);  
+    }
+}
+      h5{
+        font-size:18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 0;
+        letter-spacing: 5px;
+        color: white;
+       transform: translateY(30px);
+         transition: .4s ease-in-out;
+
+      }
+      h2{
+        font-weight: 900;
+        font-size: 40px;
+         transform: translateY(100px);
+           transition: .4s ease-in-out;
+      }
+    }
+}
+
+.recomedation{
+    font-family: $font_family;
+}
+
+.popular{
+    background-color: white;
+   border-radius: 20px;
+
+
+
+   h5{
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 25px;
+
+   }
+
+   p{
+    font-size: 14px;
+    text-align: center;
+   }
+
+   .card{
+    border: none;
+    padding: 5px;
+    
+    
+    .rating{
+        position: absolute;
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(11, 11, 11, 0.674);
+        border-radius: 20px;
+        margin: 5px ;
+        right: 5px;
+
+        i{
+            margin: 0 4px 0 0;
+            font-size: 10px;
+        }
+        
+
+    }
+
+    img{
+       border-radius: 20px; 
+       position: relative;
+      
+    }
+   }
+
+}
+
+.user_data{
+    h6{
+        font-size: 20px;
+        
+    }
+
+    .autores,.books{
+        background-color: white;
+        margin: 5px;
+        border-radius: 20px;
+    }
+ .authorCard, .bookNoteCard{
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 10px;
+margin: 0 5px;
+    img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+ }   
+    
+}

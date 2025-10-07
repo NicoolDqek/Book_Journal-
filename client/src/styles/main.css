@@ -148,6 +148,9 @@
 .hero .login_boton button:hover {
   background-color: rgb(12, 160, 113);
 }
+.hero .login_boton Link {
+  text-decoration: none;
+}
 
 .hero .info {
   margin: 1rem;
@@ -344,4 +347,173 @@
 .footer button {
   font-weight: 600;
   letter-spacing: 3px;
+}
+
+.sideBar {
+  padding: 10px;
+  background-color: rgb(210, 248, 210);
+}
+.sideBar .sidebar {
+  height: 100vh;
+}
+.sideBar .border {
+  border-radius: 20px;
+  background-color: rgb(12, 160, 113);
+}
+.sideBar .contenido {
+  height: 100vh;
+  overflow: scroll;
+  position: relative;
+}
+.sideBar .contenido::-webkit-scrollbar {
+  width: 0;
+}
+.sideBar .contenido .navbar {
+  position: sticky;
+  top: 0;
+}
+.sideBar .tittle, .sideBar .nav-link {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+.sideBar .tittle:hover, .sideBar .nav-link:hover {
+  color: black;
+}
+
+.hero_d {
+  padding: 3rem;
+  margin: 0 10px;
+  border-radius: 10px;
+  background-color: rgb(12, 160, 113);
+  font-family: "Playfair Display", serif;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/178/889/small_2x/stack-of-open-books-on-a-green-background-knowledge-and-education-concept-photo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.hero_d h5 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: white;
+}
+.hero_d p {
+  color: white;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+.hero_d .btn {
+  background-color: transparent;
+  border-color: white;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+.hero_d .btn:hover {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.targetas {
+  display: flex;
+  justify-content: space-around;
+}
+.targetas .card {
+  margin: 6px 1px;
+  background-color: rgb(12, 160, 113);
+  height: 130px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  overflow: hidden;
+  height: 100px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.targetas .card:hover {
+  height: auto;
+}
+.targetas .card:hover h5 {
+  transform: translateY(0);
+}
+.targetas .card:hover h2 {
+  transform: translateY(0);
+}
+.targetas .card h5 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+  letter-spacing: 5px;
+  color: white;
+  transform: translateY(30px);
+  transition: 0.4s ease-in-out;
+}
+.targetas .card h2 {
+  font-weight: 900;
+  font-size: 40px;
+  transform: translateY(100px);
+  transition: 0.4s ease-in-out;
+}
+
+.recomedation {
+  font-family: "Playfair Display", serif;
+}
+
+.popular {
+  background-color: white;
+  border-radius: 20px;
+}
+.popular h5 {
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.popular p {
+  font-size: 14px;
+  text-align: center;
+}
+.popular .card {
+  border: none;
+  padding: 5px;
+}
+.popular .card .rating {
+  position: absolute;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(11, 11, 11, 0.674);
+  border-radius: 20px;
+  margin: 5px;
+  right: 5px;
+}
+.popular .card .rating i {
+  margin: 0 4px 0 0;
+  font-size: 10px;
+}
+.popular .card img {
+  border-radius: 20px;
+  position: relative;
+}
+
+.user_data h6 {
+  font-size: 20px;
+}
+.user_data .autores, .user_data .books {
+  background-color: white;
+  margin: 5px;
+  border-radius: 20px;
+}
+.user_data .authorCard, .user_data .bookNoteCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: 0 5px;
+}
+.user_data .authorCard img, .user_data .bookNoteCard img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

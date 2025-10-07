@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -9,10 +10,10 @@ function Navbar() {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a className="navbar-brand" href="#">JournalBooks</a>
+      <Link to={'/'} className="navbar-brand" href="#">JournalBooks</Link>
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link  " aria-current="page" href="#">Home</a>
+          <Link to={'/dasboard'} className="nav-link  " aria-current="page" href="#">Home</Link>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">About Us</a>
@@ -22,7 +23,7 @@ function Navbar() {
         </li>
       </ul>
       <form className="d-flex login_boton">
-        <button className="btn btn-outline-success" type="submit">Ingresar</button>
+        <button className="btn btn-outline-success" type="submit"><Link to={'/auth'}>Ingresar</Link></button>
       </form>
     </div>
   </div>
