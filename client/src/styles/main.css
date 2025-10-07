@@ -516,4 +516,69 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+
+.favorites {
+  font-family: "Playfair Display", serif;
+}
+.favorites .hero_d img {
+  border-radius: 20px;
+}
+.favorites .hero_d .info_book {
+  color: white;
+}
+.favorites .hero_d button {
+  background-color: transparent;
+  color: white;
+}
+
+.favorites h2 {
+  padding-top: 10px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 20px;
+}
+.favorites .favorite-gallery {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+}
+.favorites .card_book {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.5s ease-in;
+}
+.favorites .card_book:hover {
+  scale: 1.1;
+}
+.favorites .card_book img {
+  height: 200px;
+  border-radius: 20px;
+}
+
+.card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book_info {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  transition: 0.5s ease-in;
+  line-height: 10px;
+  padding-top: 5px;
+}
+.book_info .btn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.book_info .btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 252, 252);
 }/*# sourceMappingURL=main.css.map */

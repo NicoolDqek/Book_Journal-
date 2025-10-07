@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/initials/HomePage'
 import AuthPage from './pages/initials/AuthPage'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import UserHome from './pages/dasboard/UserHome';
+import UserHome from './pages/dasboard/DasboardPage';
 
 function App() {
 
