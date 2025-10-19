@@ -15,13 +15,13 @@ nombre: {
   correo: {
     type: String,
     required: true,
-    unique: true, // evita duplicados
+    unique: true, 
     lowercase: true,
   },
   contraseña: {
     type: String,
     required: true,
-    minlength: 6, // seguridad mínima
+    minlength: 6,  
   },
   creadoEn: {
     type: Date,

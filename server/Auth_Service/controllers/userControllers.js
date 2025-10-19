@@ -59,7 +59,7 @@ const login = async(req,res) => {
    const usuario= await User.findOne({correo})
 
     if (!usuario) {
-        return res.status(400).json({message:'error correo ya existe'})
+        return res.status(400).json({message:'email no existe'})
     }
 
     const match = await bcrypt.compare(contraseña,usuario.contraseña)

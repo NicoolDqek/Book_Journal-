@@ -1,10 +1,10 @@
-const Book = require("../models/BookShema")
-
+const Book = require("../models/BookShema");
+const { bookService } = require("../services/estados");
 
 
 const createBook =async(req,res) => {
 
-const usuarioId = req.user?.id    
+const usuarioId = req.user?._id    
 const {
     titulo,
     author,
@@ -51,25 +51,31 @@ const {
     }
 }
 
-
-const getBooks = async(req,res) => {
-
-    try {
-        const libros= await Book.find()
-        res.status(200).json({libros})
-    } catch (error) {
-           return res.status(500).json({message:'libro no se obtener',error:error.message})
-      
-        
+const getBooks = async (req, res) => {
+   
+    const usuarioId = req.user?._id;
+    
+    if (!usuarioId) {
+        return res.status(400).json({ message: "Usuario no existe" });
     }
 
-}
+  try {
+    const librosUsuario = await bookService.cargarLibros(usuarioId);
+    res.status(200).json({ libros: librosUsuario });
+    
+  } catch (error) {
+    return res.status(500).json({
+      message: "libro no se pudo obtener",
+      error: error.message,
+    });
+  }
+};
 
 
 const getBookById = async(req,res) => {
 const {id} = req.params
     try {
-        const book = await Book.findById(id)
+        const book = idFiltro(id)
 
         if (!book) {
           res.status(400).json({message:'libro no encontrado'})
@@ -118,7 +124,7 @@ const updates = req.body;
 const deleteBooks = async(req,res) => {
 
 const {id}= req.params
-const usuarioId = req.user?.id 
+const usuarioId = req.user?._id 
     try {
     const book = await Book.findOneAndDelete({_id:id,usuario:usuarioId}) 
     

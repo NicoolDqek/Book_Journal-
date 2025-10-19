@@ -113,14 +113,7 @@ const ordenarmientoBook = async (req, res) => {
     fechaSort = "asc",
   } = req.query;
 
-
-  const sortMap = {
-    rating: ratingSort,
-    titulo: tituloSort,
-    rating_user: ratingUserSort,
-    numero_paginas: paginasSort,
-    fecha_ingreso: fechaSort,
-  };
+  
 
 
   const sortOptions = {};

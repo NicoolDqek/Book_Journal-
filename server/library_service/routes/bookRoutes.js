@@ -1,7 +1,8 @@
 const express=require('express')
-const {createBook,getBooks, getBookById, editBook, deleteBooks} = require('../controllers/bookController')
+const {createBook,getBooks, getBookById, editBook, deleteBooks} = require('../controllers/bookController');
+const { authMiddleware } = require('../../Auth_Service/middleware/usuarioMiddleware');
 const router=express.Router()
-const { authMiddleware } = require('../middleware/usuarioMiddleware');
+
 
 router.post('/create', authMiddleware, createBook);
 router.get('/all_books', authMiddleware,getBooks);
